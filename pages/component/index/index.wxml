@@ -1,3 +1,8 @@
-<view class="component_index_wrapper">
-  <text class="title">Index</text>
-</view>
+<scroll-view class="content" scroll-y style='height:{{main_height}}px;' bindscrolltolower='scrollDown'>
+  <view class="waiting_img" wx:if="{{pull_loading}}">
+    <image src="/pages/img/loading.gif"></image>
+  </view>
+  <view class="loadFlagText" wx:if="{{!loadFlag}}">
+    <text class="loadFlagText">到底了~</text>
+  </view>
+</scroll-view>
