@@ -14,3 +14,33 @@
 ![](https://img-1257191344.cos.ap-chengdu.myqcloud.com/demo-see.gif)
 
 如果这个 `Demo` 能够帮助到您。请不要吝惜您的 `Star` 😊。
+
+### 加载显示
+
+如果希望每次点击 `icon` 都刷新页面，请将 `index.wxml` 的 `hidden` 变为 `wx:if`，逻辑和 `hidden` 相反即可。
+
+**首页加载后渲染全部页面**
+```html
+<view hidden="{{currentTab == 0? false: true}}">
+  <component_index/>
+</view>
+<view hidden="{{currentTab == 1? false: true}}">
+  <component_car/>
+</view>
+<view hidden="{{currentTab == 2? false: true}}">
+  <component_my/>
+</view>
+```
+
+**每次点击 重新加载当前页**
+```html
+<view wx:if="{{currentTab == 0}}">
+  <component_index/>
+</view>
+<view wx:if="{{currentTab == 1}}">
+  <component_car/>
+</view>
+<view wx:if="{{currentTab == 2}}">
+  <component_my/>
+</view>
+```
