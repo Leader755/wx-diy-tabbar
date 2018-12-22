@@ -9,17 +9,11 @@
 
 ![](https://img-1257191344.cos.ap-chengdu.myqcloud.com/tabbar-diy.jpg)
 
-### 实现效果
-
-![](https://img-1257191344.cos.ap-chengdu.myqcloud.com/demo-see.gif)
-
-如果这个 `Demo` 能够帮助到您。请不要吝惜您的 `Star` 😊。
-
 ### 加载显示
 
-如果希望每次点击 `icon` 都刷新页面，请将 `index.wxml` 的 `hidden` 变为 `wx:if`，逻辑和 `hidden` 相反即可。
+如果希望每次点击 `icon` 都刷新页面，将 `index.wxml` 的 `hidden` 变为 `wx:if`，逻辑和 `hidden` 相反即可。具体差异见下方。
 
-**首页加载后渲染全部页面**
+#### 加载一次
 ```html
 <view hidden="{{currentTab == 0? false: true}}">
   <component_index/>
@@ -32,7 +26,7 @@
 </view>
 ```
 
-**每次点击 重新加载当前页**
+#### 每次点击加载
 ```html
 <view wx:if="{{currentTab == 0}}">
   <component_index/>
@@ -44,3 +38,11 @@
   <component_my/>
 </view>
 ```
+
+
+### 实现效果
+
+![](https://img-1257191344.cos.ap-chengdu.myqcloud.com/demo-see.gif)
+
+如果这个 `Demo` 能够帮助到您。请不要吝惜您的 `Star` 😊。
+
