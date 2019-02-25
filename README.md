@@ -42,7 +42,7 @@
 
 ### 实现效果
 
-![](https://upload-images.jianshu.io/upload_images/12904618-6b38b010fb427995.gif?imageMogr2/auto-orient/strip)
+![image](https://img-1257191344.cos.ap-chengdu.myqcloud.com/demo-see.gif)
 
 如果这个 `Demo` 能够帮助到您。请不要吝惜您的 `Star` 😊。
 
